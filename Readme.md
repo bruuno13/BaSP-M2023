@@ -4,7 +4,7 @@
 Work in Figma
 
 ## Week 02
-I had to create a landing in html. I worked with Git
+I had to create a landing in HTML. I worked with Git
 and GitHub
 
 ## Authors
