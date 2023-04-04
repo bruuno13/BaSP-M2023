@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+
+body {
+
+    font-family: 'Roboto Mono', monospace;
+    margin: 25px;
+}
+
+header {
+    position: relative;
+    font-size: 20px ;
+    margin: 0%;
+    color: #49A378;
+    text-shadow: 3px 3px 3px;
+    padding-left: 40px;
+    border-bottom: 1px black;
+}
+
+nav {
+    position: absolute;
+    display:inline-block;
+    left: 90%;
+}
+
+h1 {
+    display:inline-block;
+    font-size: 40px;
+}
+
+h2{
+    color: #49A378;
+    font-size: 34px;
+}
+
+h3{
+
+
+}
+
+h4{
+
+}
+ 
+nav img {
+    width: 40px;
+}
+
+section {
+    border-top: 1px solid black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.hi-mega{
+    text-transform: capitalize;
+}
+
+.free-and-fully {
+    text-transform: uppercase;
+}
+
+.article-hi {
+    padding-left: 40px;
+    color: #49A378;
+}
+
+.hi-text , .text2 {
+    color: black;
+}
+
+.Appfunctions{
+    padding-left: 40px;
+    color: #49A378;
+}
+
+.Book{
+    padding-left: 50px;
+    color: #49A378;
+}
+
+.Calendar {
+    padding-left: 100px;
+    color: #49A378;
+}
+
+.Membership {
+    padding-left: 100px;
+    color: #49A378;
+}
+
+.contact {
+    padding-left: 100px;
+    color: #49A378;
+}
+.About {
+    padding-left: 100px;
+    color: #49A378;
+}
+
+
