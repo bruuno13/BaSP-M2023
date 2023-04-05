@@ -27,9 +27,15 @@ h2{
     font-size: 34px;
 }
 
-h3 { color: #49A378;}
+h3 { 
+    color: #49A378;
+    font-size: 28px;
+}
 
-h4 {color: #49A378;}
+h4 {
+    color: #49A378;
+    font-size: 22px;
+}
  
 nav img {width: 40px;}
 
@@ -39,11 +45,12 @@ section {
     padding-bottom: 50px;
 }
 
-/* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡GYM PRESENTATION !!!!!!!!!!!!!! */
+/* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡GYM PRESENTATION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .gym-presentation {
     position:relative;
     display: inline-block;
 }
+
 .article-hi {
     position: relative;
     display: inline-block;
@@ -51,32 +58,31 @@ section {
     vertical-align: top;
     margin-right: 80px;
 }
+
 .hi-mega{
     text-transform: capitalize;
 }
+
 .free-and-fully {
     padding-top: 20px;
     text-transform: uppercase;
 }
+
 .hi-paragraph {
     padding-top: 20px;
     padding-bottom: 20px;
     max-width: 100%;
     text-align: left;
-    font-size: 20px;
 }
+
 .button-hi {
     margin-top: 10px;
-
 }
 .gym-img {display: inline-block;}
 
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-
-/* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ APP FUNCTIONS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ APP FUNCTIONS !!!!!!!!!!!!!!!!!!!! */
 
 .appfunctions{
     padding-left: 40px;
@@ -98,6 +104,7 @@ section {
     display: inline-block;
     width: 80px;
     height: 80px;
+    margin-top: 30px;
     
 }
 
@@ -106,17 +113,15 @@ section {
     width: 70%;
     padding-left: 30px;
 }
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 
-/*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ ABOUT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-.about {
-    display: inline-block;
-    
-}
+/*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ ABOUT!!!!!!!!!!!!!!!!!!!!!!! */
+.about {display: inline-block;}
+
 .about-title {
     display: inline-block;
-    margin-top: 40px;
+    margin-top:20px;
     margin-left: 30px;
 }
 .about-paragraph {
@@ -126,11 +131,11 @@ section {
     float:right;
     vertical-align: top;
     text-align: center; 
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
+/* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡queries!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .queries{
     position: relative;
     display: inline-block;
@@ -171,5 +176,18 @@ section {
 .icon-list{
     margin-top: 15px;
     list-style: circle;
-    font-size: ;
 }
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡footer!!!!!!!!!!!!!!!!!!!! */
+footer{
+    display: inline-block;
+    position: relative;
+    width: 80%;
+    margin-left: 800px;
+}
+.icon{
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
