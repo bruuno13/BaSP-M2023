@@ -7,5 +7,8 @@ Work in Figma
 I had to create a landing in HTML. I worked with Git
 and GitHub
 
+## Week 03
+I had to create a style in CSS.
+
 ## Authors
 - Bruno Piaggio

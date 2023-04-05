@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 25px;
+}
+header {
+    font-size: 20px;
+    color: #49A378;
+    text-shadow: 3px 3px 3px;
+    padding-left: 40px;
+    border-bottom: 1px black;
+}
+
+nav {
+    display: inline-block;
+   }
+
+h1 {
+    display: inline-block;
+    width: 80%;
+    font-size: 40px;
+}
+
+h2{
+    color: #49A378;
+    font-size: 34px;
+}
+
+h3 { color: #49A378;}
+
+h4 {color: #49A378;}
+ 
+nav img {width: 40px;}
+
+section {
+    border-top: 1px solid black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡GYM PRESENTATION !!!!!!!!!!!!!! */
+.gym-presentation {
+    position:relative;
+    display: inline-block;
+}
+.article-hi {
+    position: relative;
+    display: inline-block;
+    max-width: 49%;
+    vertical-align: top;
+    margin-right: 80px;
+}
+.hi-mega{
+    text-transform: capitalize;
+}
+.free-and-fully {
+    text-transform: uppercase;
+}
+.hi-paragraph {
+
+}
+.button-hi {
+    margin-top: 10px;
+
+}
+.gym-img {display: inline-block;}
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+/* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ APP FUNCTIONS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.appfunctions{
+    padding-left: 40px;
+    color: #49A378;
+}
+
+.app {
+    display: inline-block;
+    width: 100%;
+}
+.art {
+    display: inline-block;
+    width: 40%;
+    padding-left: 70px;
+}
+
+.img {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    padding-bottom: 50px;
+}
+
+.conteiner {
+    display: inline-block;
+    width: 70%;
+    padding-left: 30px;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+/*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ ABOUT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.about {
+    display: inline-block;
+    
+}
+.about-title {
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.about-paragraph {
+    display:inline;
+    position:relative;
+    width:85%;
+    float:right;
+    vertical-align: top;
+    text-align: center; 
+    margin-top: 50px;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.text-box {
+    
+}
