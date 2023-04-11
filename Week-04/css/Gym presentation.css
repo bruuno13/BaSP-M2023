@@ -11,11 +11,20 @@
 }
 
 .article-hi {
-    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
 }
 
 .hi-mega{
     text-transform: capitalize;
+    margin-bottom: 50px;
+}
+
+.hi-paragraph{
+    margin-bottom: 50px;
 }
 
 .free{
@@ -33,10 +42,16 @@
 }
 
 .button-hi {
-    margin-top: 20px;
-    text-align: center; 
+    flex-direction: row;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 30px;
 }
 
+.main-mega{
+    display: flex;
+}
 .main-img { 
     flex-direction: row;
     justify-items: center;
@@ -74,14 +89,16 @@
 .free-and-fully {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     text-transform: uppercase;
     margin-bottom: 30px;
     
 }
 
 .button-hi {
+    flex-direction: row;
+    justify-content: flex-start;
     margin-top: 20px;
     text-align: center; 
 }
@@ -95,5 +112,55 @@
 .gym-img {
     display: flex;
     width: 50%;
+}
+}
+
+
+@media screen and (min-width: 1025px){
+ 
+.gym-presentation {
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.article-hi {
+     margin-bottom: 50px;
+    }
+    
+.hi-mega{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-transform: capitalize;
+    margin-left: 60px;
+}
+
+.free-and-fully {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-left: 60px;
+    
+}
+.hi-paragraph{
+    margin-left: 60px;
+}
+
+.button-hi {
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 60px; 
+}
+
+.gym-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 724px;
+    height: 369px;
 }
 }

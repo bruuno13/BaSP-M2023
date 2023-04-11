@@ -1,36 +1,42 @@
 .activities{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    /* position: relative;
-    display: inline-block;
-    max-width: 100%; 
-    align-items: center; */
+    align-items: flex-start;
+    justify-content: start;
+
 }
 .list{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-top: 20px;
-    /* position: relative;
-    display: inline-block;
-    max-width: 24%; 
-    vertical-align: top; 
-    padding: 50px; */    
+    padding: 20px;
+    align-items: flex-start;
+    justify-content: start;
 }
-
 
 .icon-list{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-top: 15px;
     list-style: circle;
+    margin-bottom: 15px;
 }
-.activities > article > ul > li { 
-    font-size: 14px;
-    list-style: circle; 
+h4{
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 1025px){
+    .activities{
+        position: relative;
+        display: inline-block;
+        max-width: 100%; 
+        align-items: center;
+    }
+    .list{
+        position: relative;
+        display: inline-block;
+        max-width: 24%; 
+        vertical-align: top; 
+        padding: 50px;
+        
+        
+    }
+    .icon-list{
+        margin-top: 15px;
+        list-style: circle;
+    }
 }

@@ -3,9 +3,6 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    /* position: relative;
-    display: inline-block;
-    width: 100%; */
 }
 .contact-form{
     margin-top: 20px;
@@ -17,15 +14,6 @@
     justify-content: center;
     text-align: center;
     margin-top: 20px;
-    
-    
-    
-    /* position: relative;
-    display: inline-block;*/
-    /* max-width: 49%; 
-    top: 20px;
-    right: 400px;
-    float: right; */
 }
 
 .form {
@@ -39,6 +27,17 @@
     height: 30px;
 }
 
+.button-box{
+    width: 30%;
+    flex: 0 0 20%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 10px 24px; 
+    background: #AACE9B;
+    border-color: #AACE9B;
+    border-radius: 5px;
+}
 
 
 
