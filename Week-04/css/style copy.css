@@ -1,27 +1,17 @@
-/* .gym-presentation {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
+@media screen and (min-width:390px){
+    body{
+
+    }
 }
 
-.article-hi {
-    font-style: normal;
-    font-weight: 50;
-    font-size: 40px;
-    line-height: 50px;
-    text-align: center;
-    text-shadow: 0px 4px 4px;
-    /* margin-bottom: 50px; 
+@media screen and (min-width: 601px){
+    body {
+
+    }
 }
 
-.hi-mega{
-    text-transform: capitalize;
-    margin-bottom: 30px;
-}
+@media screen and (min-width: 1025px){
+    body {
 
-.free-and-fully {
-    text-transform: uppercase;
-    margin-bottom: 30px;
-} */
+    }
+}

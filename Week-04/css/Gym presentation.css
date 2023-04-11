@@ -23,6 +23,7 @@
     text-transform: uppercase;
     margin-top: 20px;
     font-size: 1em;
+    color: black;
 }
 
 .free-and-fully {
@@ -32,11 +33,67 @@
 }
 
 .button-hi {
-    margin-top: 20px; 
-    text-align: center;
+    margin-top: 20px;
+    text-align: center; 
 }
 
-.gym-img { 
+.main-img { 
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+
+.gym-img {
+    display: none;
+}
+
+@media screen and (min-width: 601px){
+
+.free {
+    display: none;
+}
+.gym-presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("");
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.article-hi {
+    margin-bottom: 50px;
+}
+
+.hi-mega{
+    text-transform: capitalize;
+}
+
+.free-and-fully {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    
+}
+
+.button-hi {
+    margin-top: 20px;
+    text-align: center; 
+}
+
+.main-img { 
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+
+.gym-img {
+    display: flex;
+    width: 50%;
+}
 }
