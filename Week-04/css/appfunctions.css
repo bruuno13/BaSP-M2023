@@ -1,3 +1,9 @@
+.container-appfunctions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .appfunctions{
     display: flex;
     justify-content: center;
@@ -36,47 +42,47 @@
 
 @media screen and (min-width: 601px){
 
-    .appfunctions{
-        display: flex;
-        flex-direction: row;
-        color: #49A378;
-        margin-bottom: 40px;
-    }
-    
-    .app {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; 
-    }
+.appfunctions{
+    display: flex;
+    flex-direction: row;
+    color: #49A378;
+    margin-bottom: 40px;
+}
 
-    .art {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 60px;
-        padding: 0 30px 0 30px;
-    }
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
 
-    .img {
-        width: 80px;
-        margin-bottom: 15px;
-    } 
+.art {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    padding: 0 30px 0 30px;
+}
 
-    .conteiner h3 {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-left: 30px;
-        margin-bottom: 15px;
-        font-weight: 400;
-        line-height: 33px;
-        letter-spacing: 0em;
-    }
-    .text {
-        margin-left: 30px;
-    }
+.img {
+    width: 80px;
+    margin-bottom: 15px;
+} 
+
+.conteiner h3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+}
+.text {
+    margin-left: 30px;
+}
 }
 
 

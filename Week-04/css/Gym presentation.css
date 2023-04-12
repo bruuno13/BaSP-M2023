@@ -1,3 +1,10 @@
+.container-megarocket {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
 .gym-presentation {
     display: flex;
     justify-content: center;
@@ -6,8 +13,7 @@
     background-color: rgba(0, 0, 0, 0.15);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center center;
-   
+    background-position: center center; 
 }
 
 .article-hi {
@@ -63,6 +69,12 @@
 }
 
 @media screen and (min-width: 601px){
+.container-megarocket {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 
 .free {
     display: none;
@@ -117,37 +129,34 @@
 
 
 @media screen and (min-width: 1025px){
- 
+.container-megarocket {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 .gym-presentation {
-    justify-content: center;
-    align-items: center;
-    text-align: left;
+    margin: 0 30px 0 30px;
 }
 .article-hi {
-     margin-bottom: 50px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    margin-bottom: 50px;
     }
     
 .hi-mega{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-transform: capitalize;
-    margin-left: 60px;
-}
+    text-align: start;
+    margin: 0;
+}   
 
 .free-and-fully {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    margin-left: 60px;
+    text-align: start;
+    margin-left: 0;
     
 }
 .hi-paragraph{
-    margin-left: 60px;
+    margin-left: 0;
 }
 
 .button-hi {
@@ -156,11 +165,18 @@
     margin-left: 60px; 
 }
 
+.main-mega{
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 .gym-img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 724px;
+    width: 725px;
     height: 369px;
 }
 }
