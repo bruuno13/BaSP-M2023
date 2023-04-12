@@ -41,9 +41,9 @@
 
 @media screen and (min-width: 601px){
 
-.form{
-    display: flex;
-    flex-direction: row;
+.reason{
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }    
     
@@ -54,26 +54,28 @@
 .queries{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
-.contact-form{
-    position: relative;
-    display: inline-block;
-    max-width: 49%; 
-}
+
 .reason{
-    position: relative;
-    display: inline-block;
-    max-width: 49%; 
-    top: 20px;
-    right: 400px;
-    float: right;
+    display: flex;
+    justify-content: flex-end;
+
 }
 .text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     margin-top: 15px;
+    margin-left: 20px;
 }
 .text-area{
-    
+    justify-content: flex-start;
+    width: 700px;
+    height: 200px;
+    margin-left: 20px;
 }
 
 }
