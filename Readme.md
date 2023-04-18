@@ -14,5 +14,9 @@ I had to create a style in CSS.
 I had to create a page in CSS, with different styles; one for mobile phones another for tablets and another for Desktop.
 I had to apply flexbox in the CSS code and correct the mistakes in the code.
 
+## Week 05
+I had to learn to program in the javascript language and do exercises.
+
+
 ## Authors
 - Bruno Piaggio

@@ -52,6 +52,7 @@ console.log(resultstri6)
 console.log('-Exercise 2.f:');
 
 var stri7 = 'programming language'
+
 var resultstri7 = stri7.indexOf (" ")
 
 var stri8 = stri7.toUpperCase() + stri7.toLocaleLowerCase() 
@@ -61,4 +62,5 @@ var p = stri8.substring(0,1)
 var l = stri8.substring(12,13)
 
 var resultprogram = p + stri7.substring(1,11) + l + stri7.substring(13,20)
+
 console.log(resultprogram)

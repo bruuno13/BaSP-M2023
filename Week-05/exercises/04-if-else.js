@@ -7,12 +7,10 @@ console.log('-Exercise 4.a:');
 var num = Math.random(num);
 
 if(0.5 <= num){
-
     alert('Greater than or equal to 0,5')
 }
 else{
     alert('Lower than 0,5');
-
 }
 
 console.log(num);
@@ -21,8 +19,6 @@ console.log(num);
 //los siguientes mensajes de alerta:
 console.log('-Exercise 4.b:');
 
-var Age = Math.floor(Math.random()* 100); 
-
 // i. “Bebe” si la edad es menor a 2 años;
 // ii. “Niño” si la edad es entre 2 y 12 años;
 // iii. “Adolescente” entre 13 y 19 años;
@@ -30,6 +26,8 @@ var Age = Math.floor(Math.random()* 100);
 // v. “Adulto” entre 31 y 60 años;
 // vi. “Adulto mayor” entre 61 y 75 años;
 // vii.“Anciano” si es mayor a 75 años.
+
+var Age = Math.floor(Math.random()* 100); 
 
 if (Age < 2){
 
@@ -49,6 +47,7 @@ if (Age < 2){
     
 }else if (61 <= Age && Age<= 75) {
     alert('Adulto mayor');
+
 }else{
     alert('Anciano')
 }

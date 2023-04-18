@@ -16,8 +16,8 @@ console.log('-Exercise 5.b:');
 var week1 = ['mondy','tuesday','wednesday','thursday','friday'];
 
 for(var i=0; i < week1.length; i++){
- week1[i] = week1 [i][0].toUpperCase() + week1[i].substring(1);
- alert(week1[i])
+     week1[i] = week1 [i][0].toUpperCase() + week1[i].substring(1);
+     alert(week1[i])
 }
 
 /* c. Crear una variable llamada “sentence” que tenga un string vacío, luego al array del punto a) recorrerlo  con un 
@@ -29,7 +29,7 @@ var week2 = ['mondy','tuesday','wednesday','thursday','friday'];
 var sentence = ' ';
 
 for(var i=0; i < week2.length; i++){
-sentence += week2[i] + '';
+     sentence += week2[i] + '';
 }
 alert(sentence)
 console.log(week2);
