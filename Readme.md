@@ -25,7 +25,5 @@ Link:
 https://bruuno13.github.io/BaSP-M2023/Week-05/index.html
 
 
-
-
 ## Authors
 - Bruno Piaggio

@@ -4,23 +4,26 @@
     justify-content: center;
     text-align: center;
 }
+
 .contact-form{
-    margin-top: 20px;
     justify-content: center;
+    margin-top: 20px;
 }
+
 .reason{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     margin-top: 20px;
+    text-align: center;
 }
 
 .form {
-    text-align: left;
-    list-style: none;
     margin-bottom: 10px;
+    text-align: left;
+    list-style: none;  
 }
+
 .text-box {
     margin-bottom: 15px;
     width: 255px;
@@ -28,54 +31,56 @@
 }
 
 .button-box{
-    width: 30%;
     flex: 0 0 20%;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    width: 30%;
     margin-top: 15px;
     padding: 10px 24px; 
     background: #AACE9B;
     border-color: #AACE9B;
     border-radius: 5px;
+
 }
 
 @media screen and (min-width: 601px){
 
-.reason{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}    
+    .reason{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
     
 }
 
 @media screen and (min-width: 1025px){
 
 .queries{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-.reason{
-    display: flex;
-    justify-content: flex-end;
+    .reason{
+        display: flex;
+        justify-content: flex-end;
 
-}
-.text-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 15px;
-    margin-left: 20px;
-}
-.text-area{
-    justify-content: flex-start;
-    width: 700px;
-    height: 200px;
-    margin-left: 20px;
-}
+    }
+    
+    .text-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+
+    .text-area{
+        justify-content: flex-start;
+        width: 700px;
+        height: 200px;
+        margin-left: 20px;
+    }
 
 }
