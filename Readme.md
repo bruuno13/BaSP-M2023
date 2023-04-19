@@ -18,8 +18,8 @@ Link:
 https://bruuno13.github.io/BaSP-M2023/Week-04/index.html
 
 ## Week 05
-I had to learn to program in the javascript language and do exercises, practice with java and css.
-I corrected the css desing and styles.
+I had to learn to program in the javascript language and I did exercises with for,string,arrays, if else, functions, variables, operators and practice with javascript and css.
+I corrected the CSS and HTML, in CSS corrected desing and styles.
 
 Link:
 https://bruuno13.github.io/BaSP-M2023/Week-05/index.html

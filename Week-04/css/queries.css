@@ -6,8 +6,10 @@
 }
 
 .contact-form{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 20px;
+    align-items: center;
 }
 
 .reason{
@@ -31,16 +33,16 @@
 }
 
 .button-box{
-    flex: 0 0 20%;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 30%;
-    margin-top: 15px;
-    padding: 10px 24px; 
+    margin-top: 15px; 
+    padding: 10px 24px;
     background: #AACE9B;
     border-color: #AACE9B;
     border-radius: 5px;
-
 }
 
 @media screen and (min-width: 601px){
@@ -55,7 +57,7 @@
 
 @media screen and (min-width: 1025px){
 
-.queries{
+    .queries{
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -66,21 +68,16 @@
         justify-content: flex-end;
 
     }
-    
     .text-box {
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-top: 15px;
-        margin-left: 20px;
+        flex-direction: row;
+        margin-top: 10px;
+        margin-left: 5px;
     }
-
+    
     .text-area{
-        justify-content: flex-start;
         width: 700px;
         height: 200px;
-        margin-left: 20px;
     }
 
 }
