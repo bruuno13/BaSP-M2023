@@ -18,7 +18,7 @@ header {
     width: 100%;
 }
 
-.main-img { 
+.main-img {
     flex-direction: row;
     justify-items: center;
     align-items: center;
@@ -27,7 +27,7 @@ header {
 nav {
     display: flex;
     justify-content: space-around;
-    width: 50%; 
+    width: 50%;
 }
 
 @media screen and (min-width: 1025px){

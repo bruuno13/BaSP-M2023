@@ -6,7 +6,7 @@ main{
 }
 
 h3{
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     text-transform: capitalize;
 }
 
@@ -17,10 +17,17 @@ h3{
     align-items: center;
     width: 350px;
     height: 450px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 150px;
+    margin-bottom: 100px;
     background: #FDFBFB;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .icons{
@@ -29,9 +36,14 @@ h3{
 
 .text-box {
     margin-bottom: 15px;
-    width: 230px;
+    width: 250px;
     height: 30px;
 }
+
+.error{
+    display: none;
+}
+
 .text-remember{
     display: flex;
     flex-direction: row;

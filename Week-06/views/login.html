@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../Week-06/css/reset.css">
-    <link rel="stylesheet" href="../../Week-06/css/login.css">
     <link rel="stylesheet" href="../../Week-06/css/style.css">
     <link rel="stylesheet" href="../../Week-06/css/header.css">
     <link rel="stylesheet" href="../../Week-06/css/footer.css">
+    <link rel="stylesheet" href="../../Week-06/css/login.css">
     <title>Document</title>
+    <script src="../../Week-06/js/login.js"></script>
 </head>
 <body>
     <header>
@@ -27,18 +28,20 @@
         </section>
     </header>
     <main>
-        <section class="box-user">
-            <h3>login</h3>
+        <div class="box-user">
+            <h3>log in</h3>
             <form>
                 <fieldset>
                     <img class="icons" src="../../assets/img/cart.svg" alt="mail">
                     <label></label>
-                    <input class="text-box" placeholder="email" type="email" id="email" email="email">
+                    <input class="text-box" placeholder="Email" type="Email" id="Email" email="Email">
+                    <span class="error" id="errorMail">Invalid Email</span>
                 </fieldset>
                 <fieldset>
                     <img class="icons" src="../../assets/img/lock.svg" alt="Password">
                     <label></label>
                     <input class="text-box" placeholder="Password" type="Password" id="Password" Password="Password">
+                    <span class="error" id="errorPassword">Invalid Password</span>
                 </fieldset>
                 </fieldset>
                 <div class="text-remember">
@@ -47,13 +50,14 @@
                     <div class="pass">
                         <a href="#">Forgot Password ?</a>
                         <a href="">Get help</a>
-                    </div>    
+                    </div>
                 </div>
                 <div>
                     <input class="button-continue" type="button" value="Continue"> 
+                    <span class="error" id="error"> Invalid </span>
                 </div>
             </form>
-        </section>
+        </div>
     </main>
     <footer>
         <section class="container-footer">
