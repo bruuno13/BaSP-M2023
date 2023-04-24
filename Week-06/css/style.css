@@ -1,0 +1,47 @@
+
+main{
+    border-bottom: 1px solid black ;
+}
+
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 1px solid black;
+}
+
+h1 {
+    width: fit-content;
+    font-size: 40px;
+    font-style: bold;
+    font-weight: 700;
+    line-height: 47px;
+    line-height: 100%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    text-transform: uppercase;
+    color: #49a37b;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #49A378;
+}
+
+h3 { 
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #49A378;
+}
+
+h4 {
+    font-size: 22px;
+    color: #49A378;
+}
+ 

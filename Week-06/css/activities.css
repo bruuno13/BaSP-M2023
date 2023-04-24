@@ -1,0 +1,41 @@
+.activities{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+
+.list{
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.title-activities{
+    margin-bottom: 20px;
+}
+
+.icon-list{
+    margin-bottom: 15px;
+    list-style: circle;
+}
+
+@media screen and (min-width: 1025px){
+
+    .activities{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .list{ 
+        vertical-align: top; 
+        max-width: 24%;
+        padding: 50px;
+    }    
+            
+    .icon-list{
+        margin-top: 15px;
+        list-style: circle;
+    }
+}
