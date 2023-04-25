@@ -31,19 +31,18 @@
         <div class="box-user">
             <h3>log in</h3>
             <form>
-                <fieldset>
-                    <img class="icons" src="../../assets/img/cart.svg" alt="mail">
-                    <label></label>
-                    <input class="text-box" placeholder="Email" type="Email" id="Email" email="Email">
-                    <span class="error" id="errorMail">Invalid Email</span>
-                </fieldset>
-                <fieldset>
-                    <img class="icons" src="../../assets/img/lock.svg" alt="Password">
-                    <label></label>
-                    <input class="text-box" placeholder="Password" type="Password" id="Password" Password="Password">
-                    <span class="error" id="errorPassword">Invalid Password</span>
-                </fieldset>
-                </fieldset>
+                <div class="box" id="box">
+                    <fieldset>
+                        <img class="icons" src="../../assets/img/cart.svg" alt="mail">
+                        <label for="Email"></label>
+                        <input class="text-box" placeholder="Email" type="Email" id="email" >
+                    </fieldset>
+                    <fieldset>
+                        <img class="icons" src="../../assets/img/lock.svg" alt="Password">
+                        <label for="Password"></label>
+                        <input class="text-box" placeholder="Password" type="Password" id="Password" Password="Password">
+                    </fieldset>
+                </div>
                 <div class="text-remember">
                     <input type="checkbox" id="Remember-me" value="Remember-me">
                     <label for="Remember-me">Remember me</label>
@@ -53,8 +52,7 @@
                     </div>
                 </div>
                 <div>
-                    <input class="button-continue" type="button" value="Continue"> 
-                    <span class="error" id="error"> Invalid </span>
+                    <input class="button-continue" type="button" value="Continue" id="login-button">
                 </div>
             </form>
         </div>

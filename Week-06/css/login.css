@@ -40,10 +40,15 @@ form{
     height: 30px;
 }
 
-.error{
+.correct{
     display: none;
 }
 
+.error {
+    display: block;
+    color: red;
+  }
+  
 .text-remember{
     display: flex;
     flex-direction: row;

@@ -1,59 +1,56 @@
+var box = document.getElementById("box");
 var EmailInput = document.getElementById("Email");
-var repeatPasswordInput = document.getElementById("Password");
-var emialErrorMsg = document.getElementById("errorMail");
-var repeatPasswordErrorMsg = document.getElementById("errorPassword");
+var PasswordInput = document.getElementById("Password");
+var LoginButton = document.getElementById("login-button");
 
-//password input
 
-//este password tiene como requisito al menos una mayuscula, una minuscula y un numero
-EmailInput.onblur = function () {
-  var Email = EmailInput.value;
-  var hasBigLetter = false;
-  var hasSmallLetter = false;
-  var hasNumber = false;
-  for (var i = 0; i < Email.length; i++) {
-    var char = Email.charAt(i);
-    if (char >= "0" && char <= "9") {
-      hasNumber = true;
-    } else if (char === char.toUpperCase()) {
-      hasBigLetter = true;
-    } else if (char === char.toLowerCase()) {
-      hasSmallLetter = true;
+function validateEmail(x){
+var Email = EmailInput.value;
+    if (Email.indexOf('@') === -1 || Email.indexOf('-') === -1){
+        EmailInput.style.border ='1px solid red';
+        x.preventDefault();
+        return false;
     }
-  }
+    EmailInput.style.border ='2px solid green';
+    return true;
+}
+function validatePassword (x) {
+    var Password = PasswordInput.value;
+    var Letter = false;
+    var numbers = false;
 
-  if (!hasBigLetter || !hasSmallLetter || !hasNumber) {
-    emailErrorMsg.classList.remove("correct");
-    emailErrorMsg.classList.add("error");
-    emailErrorMsg.textContent =
-      "este campo necesita al menos una mayuscula, una minuscula y un numero";
-  }
+    for (var i = 0; i < PasswordInput.length; i++) {
+        if (isNaN (Password.charAt(i))) {
+            Letter = true;
+        } else {
+            numbers = true;
+        }
 
-  if (Email.length < 5) {
-    emailErrorMsg.classList.remove("correct");
-    emailErrorMsg.classList.add("error");
-    emailErrorMsg.textContent = "este campo necesita al menos 5 letras";
-  }
-};
+    }
+    if(Password.length < 8 || !(Letter && numbers)){
+        PasswordInput.style.border = "1px solid green";
+        x.preventDefault();
+        return false;
+    }
+    PasswordInput.style.border = "1px solid green";
+    return true;
+}
 
-EmailInput.onfocus = function () {
-    emailErrorMsg.classList.remove("error");
-    emailErrorMsg.classList.add("correct");
-};
+function validatebox (x) {
+    var validEmail = validateEmail(x);
+    var validPassword = validatePassword(x);
 
-//repeat password input
+    if(!validEmail){
+        alert("Invalid Email")
+    }
+    if(!validPassword){
+        alert("Invalid password")
+    }
+    if(!validEmail && validPassword){
+        alert("Email: " + EmailInput.value + "\n Password: " + PasswordInput.value );
+    }
+}
 
-repeatPasswordInput.onblur = function () {
-  var Email = EmailInput.value;
-  var repeatPassword = repeatPasswordInput.value;
-  if (repeatPassword !== Email || repeatPassword.length === 0) {
-    repeatPasswordErrorMsg.classList.remove("correct");
-    repeatPasswordErrorMsg.classList.add("error");
-    repeatPasswordErrorMsg.textContent = "las contraseñas no coinciden";
-  }
-};
-
-repeatPasswordInput.onfocus = function () {
-  repeatPasswordErrorMsg.classList.remove("error");
-  repeatPasswordErrorMsg.classList.add("correct");
-};
+EmailInput.addEventListener("blur", validateEmail);
+PasswordInput.addEventListener("blur",validatePassword);
+LoginButton.addEventListener("blur", validatebox);
