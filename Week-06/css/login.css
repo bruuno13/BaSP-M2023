@@ -40,15 +40,6 @@ form{
     height: 30px;
 }
 
-.correct{
-    display: none;
-}
-
-.error {
-    display: block;
-    color: red;
-  }
-  
 .text-remember{
     display: flex;
     flex-direction: row;
@@ -75,3 +66,12 @@ form{
     border-color: #AACE9B;
     border-radius: 5px;
 }
+
+.error {
+    display: block;
+    color: red;
+  }
+  
+  .correct {
+    display: none;
+  }

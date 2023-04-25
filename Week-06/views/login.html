@@ -20,8 +20,8 @@
                 <h1>MEGA ROCKET</h1>
             </div>
             <nav>
-                <img class="nav-img" src="../../assets/img/Vector.svg" alt="">
-                <img class="nav-img" src="../../assets/img/Add User Male.svg" alt="">
+                <a href="https://bruuno13.github.io/BaSP-M2023/Week-06/views/index.html"><img class="nav-img" src="../../assets/img/Vector.svg" alt=""></a>
+                <a href="https://bruuno13.github.io/BaSP-M2023/Week-06/views/sign-up.html"><img class="nav-img" src="../../assets/img/Add User Male.svg" alt=""></a>
                 <img class="nav-img" src="../../assets/img/Vector (1).svg" alt="">
                 <img class="nav-img" src="../../assets/img/Vector (2).svg" alt="">
             </nav>
@@ -35,12 +35,14 @@
                     <fieldset>
                         <img class="icons" src="../../assets/img/cart.svg" alt="mail">
                         <label for="Email"></label>
-                        <input class="text-box" placeholder="Email" type="Email" id="email" >
+                        <input class="text-box" placeholder="Email" type="Email" id="Email" >
+                        <span class="correct" id="emailErrorMsg"></span>
                     </fieldset>
                     <fieldset>
                         <img class="icons" src="../../assets/img/lock.svg" alt="Password">
                         <label for="Password"></label>
                         <input class="text-box" placeholder="Password" type="Password" id="Password" Password="Password">
+                        <span class="correct" id="passwordErrorMsg"></span>
                     </fieldset>
                 </div>
                 <div class="text-remember">
@@ -53,6 +55,7 @@
                 </div>
                 <div>
                     <input class="button-continue" type="button" value="Continue" id="login-button">
+                    <span class="correctInputs" id=""></span>
                 </div>
             </form>
         </div>
