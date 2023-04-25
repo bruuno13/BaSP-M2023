@@ -37,6 +37,16 @@ h3{
     border-radius: 5px;
 }
 
+.error {
+    display: block;
+    color: red;
+  }
+
+  .correct {
+    display: none;
+  }
+
+
 @media screen and (min-width: 1025px){
     form{
         display: flex;

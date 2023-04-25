@@ -1,9 +1,10 @@
 window.onload = function (){
-     var emailLogin = document.getElementById("Email");
-     var emailErrorMsg = document.getElementById("emailErrorMsg");
-     var email = "example@email.com";
-     var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
-     var emailValid = false
+    // email
+    var emailLogin = document.getElementById("Email");
+    var emailErrorMsg = document.getElementById("emailErrorMsg");
+    var email = "example@email.com";
+    var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
+    var emailValid = false
      if (email.match(emailExpression)) {
          emailValid = true;
      } else {
@@ -16,13 +17,15 @@ window.onload = function (){
          if (email.length < 9) {
              emailErrorMsg.classList.remove("correct");
              emailErrorMsg.classList.add("error");
-             emailErrorMsg.textContent = "email invalid";
+             emailErrorMsg.textContent = "Email invalid";
          }
      });
      emailLogin.onfocus = function () {
          emailErrorMsg.classList.remove("error");
          emailErrorMsg.classList.add("correct");
      };
+    
+
      // password
      var passwordLogin = document.getElementById("Password");
      var passwordErrorMsg = document.getElementById("passwordErrorMsg");
@@ -56,4 +59,57 @@ window.onload = function (){
     passwordErrorMsg.classList.remove("error");
          passwordErrorMsg.classList.add("correct");
     };
+
+    //ID
+    var Idinput = document.getElementById("Id");
+    var Idmsg = document.getElementById("idmsg");
+    var IdType = "0123456789";
+    var IdExpression = /^\d+$/;
+    var Idvalid = false
+
+    if (IdType.match(IdExpression)){
+        Idvalid = true;
+    }else {
+        Idvalid = false;
+    }
+
+    Idinput.addEventListener('blur', function () {
+        var number = Idinput.value;
+        for (var i = 0; i < email.length; i++ ){
+        }
+
+        if (number.length < 7 ){
+            Idmsg.classList.remove ("error");
+            Idmsg.classList.add("correct");
+            Idmsg.textContent = "id invalid";
+        }
+    });
+
+    Idinput.onfocus = function () {
+        Idmsg.classList.remove ("error");
+        Idmsg.classList.add("correct");
+    };
+
+    //Name
+    var nameInput = document.getElementById("Name");
+    var nameS = document.getElementById("namemsg");
+
+
+    nameInput.addEventListener("blur", () =>{
+
+    var Name = namemsg.value;
+
+
+    var isValidName = /^[a-zA-Z]{3,}$/.test(Name);
+
+    nameS.classList.toggle('correct', isValidName);
+
+    if(!isValidName) {
+        nameS.classList.remove("correct");
+        nameS.classList.add("error");
+        nameS.textContent = "The name must have at least 3 letters";
+    }else {
+        nameS.textContent= "";
+    }
+    });
 }

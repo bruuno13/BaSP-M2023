@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../Week-06/css/header.css">
     <link rel="stylesheet" href="../../Week-06/css/footer.css">
     <title>Document</title>
+    <script src="../../Week-06/js/sign-up.js"></script>
 </head>
 <body>
     <header>
@@ -33,39 +34,61 @@
                     <form>
                         <div>
                         <fieldset>
+                            <label for="Name"></label>
                             <input class="text-box" placeholder="Name" type="text" id="Name" name="Name">
+                            <span id="namemsg" class="correct"></span>
                         </fieldset>
                         <fieldset>
-                            <input class="text-box" placeholder="Last name" type="text" id="Last name" name="Last name">
+                            <label for="Last name"></label>
+                            <input class="text-box"  placeholder="Last name" type="text" id="Last name" name="Last name">
+                            <span id="lastnameerror" class="correct"></span>
                         </fieldset>
                         <fieldset>
-                            <input class="text-box" placeholder="DNI" type="text" id="DNI" name="DNI">
+                            <label for="ID"></label>
+                            <input class="text-box" placeholder="ID" type="text" id="Id" name="ID">
+                            <span id="idmsg" class="correct"></span>
                         </fieldset>
                         <fieldset>
-                            <input class="text-box" placeholder="Phone number" type="text" id="Phone number" name="Phone number">
+                            <label for="Phone number"></label>
+                            <input class="text-box" placeholder="Phone number" id="Phone number" name="Phone number">
+                            <span id="phonenumebererror" class="correct"></span>
                         </fieldset>
                         <fieldset>
-                            <input class="text-box" placeholder="Adress" type="text" id="Adress" name="Adress">
+                            <label for="Adress"></label>
+                            <input class="text-box" placeholder="Adress"  type="text" id="Adress" name="Adress">
+                            <span id="adresserror" class="correct"></span>
                         </fieldset>
                         </div>
                         <div class="date">
                         <fieldset>
+                            <label for="City"></label>
                             <input class="text-box" placeholder="City" type="text" id="City" name="City">
+                            <span id="cityerror" class="correct"></span>
                         </fieldset>
                         <fieldset>
+                            <label for = "Postal"></label>
                             <input class="text-box" placeholder="Postal" type="text" id="Postal" name="Postal">
+                            <span id="postalserror" class="correct"></span>
                         </fieldset>
                         <fieldset>
-                            <input class="text-box" placeholder="date of birth" type="text" id="date of birth" name="date of birth">
+                            <label for="Date of birth "></label>
+                            <input class="text-box" type="text" placeholder="Date of birth" id="date of birth" name="date of birth">
+                            <span id="date-of-birtherror" class="correct"></span>
                         </fieldset>
                         <fieldset>
+                            <label for="Email"></label>
                             <input class="text-box" placeholder="Email" type="text" id="Email" name="Email">
+                            <span id="emailErrorMsg" class="correct"></span>
                         </fieldset>
                         <fieldset>
+                            <label for="Password"></label>
                             <input class="text-box" placeholder="Password" type="text" id="Password" name="Password">
+                            <span id="passwordErrorMsg" class="correct"></span>
                         </fieldset>
                         <fieldset>
+                            <label for="Repeat Password"></label>
                             <input class="text-box" placeholder="Repeat Password" type="text" id="Repeat Password" name="Repeat Password">
+                            <span id="repeatpassworderror" class="correct"></span>
                         </fieldset>
                         </div>
                 </div>
