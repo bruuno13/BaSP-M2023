@@ -2,13 +2,20 @@ window.onload = function (){
      var emailLogin = document.getElementById("Email");
      var emailErrorMsg = document.getElementById("emailErrorMsg");
      var email = "example@email.com";
-     var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
-     var emailValid = false
-     if (email.match(emailExpression)) {
-         emailValid = true;
-     } else {
-         emailValid = false;
-     }
+     var emailValid = isValidEmail(email);
+    function isValidEmail(email) {
+        var atIndex = email.indexOf('@');
+        var dotIndex = email.lastIndexOf('.');
+        // Verifica si la dirección de correo electrónico contiene una "@" y un "."
+        if (atIndex < 1 || dotIndex < atIndex + 2 || dotIndex + 2 >= email.length) {
+          return false;
+        }
+        // Verifica si la dirección de correo electrónico tiene más de 2 caracteres después del último punto
+        if (email.slice(dotIndex + 1).length < 2) {
+          return false;
+        }
+        return true;
+      }
      emailLogin.addEventListener('blur', function () {
          var email = emailLogin.value;
          for (var i = 0; i < email.length; i++) {
