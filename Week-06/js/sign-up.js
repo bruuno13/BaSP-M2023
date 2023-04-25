@@ -24,7 +24,6 @@ window.onload = function (){
          emailErrorMsg.classList.remove("error");
          emailErrorMsg.classList.add("correct");
      };
-    
 
      // password
      var passwordLogin = document.getElementById("Password");
@@ -91,25 +90,30 @@ window.onload = function (){
     };
 
     //Name
-    var nameInput = document.getElementById("Name");
-    var nameS = document.getElementById("namemsg");
 
-
-    nameInput.addEventListener("blur", () =>{
-
-    var Name = namemsg.value;
-
-
-    var isValidName = /^[a-zA-Z]{3,}$/.test(Name);
-
-    nameS.classList.toggle('correct', isValidName);
-
-    if(!isValidName) {
-        nameS.classList.remove("correct");
-        nameS.classList.add("error");
-        nameS.textContent = "The name must have at least 3 letters";
-    }else {
-        nameS.textContent= "";
+    var nameInput = document.getElementById('Name');
+    var nameError = document.getElementById('nameError');
+    nameInput.addEventListener('blur', () => {
+    var name = nameInput.value;
+    var isValidName = true;
+    for (var i = 0; i < name.length; i++) {
+        var char = name.charAt(i);
+        if (!((char >= 'a' && char <= 'z') || (char >= 'A' && char <= 'Z'))) {
+            isValidName = false;
+            break;
+        }
+    }
+    if (name.length < 3 || !isValidName) {
+        nameError.classList.remove('correct');
+        nameError.classList.add('error');
+        nameError.textContent = 'The name must be at least 3 letters long and contain only letters';
+    } else {
+        nameError.textContent = '';
+        nameError.classList.toggle('correct', true);
     }
     });
+    nameInput.onfocus = function() {
+    nameError.classList.remove('error');
+    nameError.classList.add('correct');
+    };
 }
