@@ -170,7 +170,7 @@ window.onload = function (){
     phoneMsg.classList.add("correct");
     };
 
-    // Adress
+    // Address
     var addressInput = document.getElementById("Address");
     var addressMsg = document.getElementById("addressMsg");
     var addressValid = false;
@@ -271,4 +271,44 @@ window.onload = function (){
     postalCodeMsg.classList.remove("error");
     postalCodeMsg.classList.add("correct");
     };
+
+    //
+    var birthdayInput = document.getElementById("Birthday");
+    var birthdayMsg = document.getElementById("birthdayMsg");
+    var birthdayValid = false;
+
+    birthdayInput.addEventListener('blur', function () {
+    var birthday = birthdayInput.value.trim();
+
+    var birthdayParts = birthday.split('/');
+        if (birthdayParts.length !== 3 || isNaN(birthdayParts[0]) || isNaN(birthdayParts[1]) || isNaN(birthdayParts[2])) {
+            birthdayValid = false;
+            birthdayMsg.classList.remove("correct");
+            birthdayMsg.classList.add("error");
+            birthdayMsg.textContent = "Invalid birthday format. Please use 'dd/mm/yyyy'";
+        return;
+    }
+
+    var day = parseInt(birthdayParts[0]);
+    var month = parseInt(birthdayParts[1]);
+    var year = parseInt(birthdayParts[2]);
+
+    if (day < 1 || day > 31 || month < 1 || month > 12 || year < 1900 || year > new Date().getFullYear()) {
+        birthdayValid = false;
+        birthdayMsg.classList.remove("correct");
+        birthdayMsg.classList.add("error");
+        birthdayMsg.textContent = "Invalid birthday. Please enter a valid date";
+    } else {
+        birthdayValid = true;
+        birthdayMsg.classList.remove("error");
+        birthdayMsg.classList.add("correct");
+    }
+    });
+
+    birthdayInput.onfocus = function () {
+    birthdayMsg.classList.remove("error");
+    birthdayMsg.classList.add("correct");
+    };
+
+    
 }
