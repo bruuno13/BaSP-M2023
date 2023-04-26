@@ -24,6 +24,14 @@ I corrected the CSS and HTML, in CSS corrected desing and styles.
 Link:
 https://bruuno13.github.io/BaSP-M2023/Week-05/index.html
 
+## Week 06
+This week I had to log in and sign up a web page. 
+Work with CSS to style and HTML. 
+Use javascript to do validations.
+
+Link:
+https://bruuno13.github.io/BaSP-M2023/Week-06/views/index.html
+
 
 ## Authors
 - Bruno Piaggio

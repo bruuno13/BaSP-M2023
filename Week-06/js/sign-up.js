@@ -1,93 +1,4 @@
 window.onload = function (){
-    // email
-    var emailLogin = document.getElementById("Email");
-    var emailErrorMsg = document.getElementById("emailErrorMsg");
-    var email = "example@email.com";
-    var emailValid = isValidEmail(email);
-    function isValidEmail(email) {
-        var atIndex = email.indexOf('@');
-        var dotIndex = email.lastIndexOf('.');
-        if (atIndex < 1 || dotIndex < atIndex + 2 || dotIndex + 2 >= email.length) {
-          return false;
-        }
-        if (email.slice(dotIndex + 1).length < 2) {
-          return false;
-        }
-        return true;
-      }
-     emailLogin.addEventListener('blur', function () {
-         var email = emailLogin.value;
-         for (var i = 0; i < email.length; i++) {
-         }
-         if (email.length < 9) {
-             emailErrorMsg.classList.remove("correct");
-             emailErrorMsg.classList.add("error");
-             emailErrorMsg.textContent = "Email invalid";
-         }
-     });
-     emailLogin.onfocus = function () {
-         emailErrorMsg.classList.remove("error");
-         emailErrorMsg.classList.add("correct");
-     };
-
-     // password
-     var passwordLogin = document.getElementById("Password");
-     var passwordErrorMsg = document.getElementById("passwordErrorMsg");
-     passwordLogin.addEventListener('blur', function () {
-        var password = passwordLogin.value;
-        var hasBigLetter = false;
-        var hasSmallLetter = false;
-        var hasNumber = false;
-        for (var i = 0; i < password.length; i++) {
-             var char = password.charAt(i);
-             if (char >= "0" && char <= "9") {
-                hasNumber = true;
-             } else if (char === char.toUpperCase()) {
-                 hasBigLetter = true;
-             } else if (char === char.toLowerCase()) {
-                 hasSmallLetter = true;
-             }
-         }
-         if (!hasBigLetter || !hasSmallLetter || !hasNumber) {
-             passwordErrorMsg.classList.remove("correct");
-             passwordErrorMsg.classList.add("error");
-             passwordErrorMsg.textContent = "this field needs at least one capital letter, one small letter and one number.";
-         }
-         if (password.length < 5) {
-             passwordErrorMsg.classList.remove("correct");
-             passwordErrorMsg.classList.add("error");
-             passwordErrorMsg.textContent = "this field needs at least 8 letters";
-             }
-     });
-    passwordLogin.onfocus = function () {
-    passwordErrorMsg.classList.remove("error");
-         passwordErrorMsg.classList.add("correct");
-    };
-
-    //ID
-    var Idinput = document.getElementById("Id");
-    var Idmsg = document.getElementById("idmsg");
-    var Idvalid = false;
-
-    Idinput.addEventListener('blur', function () {
-    var number = parseInt(Idinput.value);
-    if (!isNaN(number) && Number.isInteger(number) && number.toString().length >= 7) {
-        Idvalid = true;
-        Idmsg.classList.remove("error");
-        Idmsg.classList.add("correct");
-        Idmsg.textContent = "Id valid";
-    } else {
-        Idvalid = false;
-        Idmsg.classList.remove("correct");
-        Idmsg.classList.add("error");
-        Idmsg.textContent = "Id invalid, only numbers and must have more than 7 numbers";
-    }
-    });
-
-    Idinput.onfocus = function () {
-    Idmsg.classList.remove("error");
-    Idmsg.classList.add("correct");
-    };
 
     //Name
     var nameInput = document.getElementById('Name');
@@ -142,8 +53,33 @@ window.onload = function (){
     LastnameError.classList.remove('error');
     LastnameError.classList.add('correct');
     }
+    
+    //ID
+    var Idinput = document.getElementById("Id");
+    var Idmsg = document.getElementById("idmsg");
+    var Idvalid = false;
 
-    // phone number
+    Idinput.addEventListener('blur', function () {
+    var number = parseInt(Idinput.value);
+    if (!isNaN(number) && Number.isInteger(number) && number.toString().length >= 7) {
+        Idvalid = true;
+        Idmsg.classList.remove("error");
+        Idmsg.classList.add("correct");
+        Idmsg.textContent = "Id valid";
+    } else {
+        Idvalid = false;
+        Idmsg.classList.remove("correct");
+        Idmsg.classList.add("error");
+        Idmsg.textContent = "Id invalid, only numbers and must have more than 7 numbers";
+    }
+    });
+
+    Idinput.onfocus = function () {
+    Idmsg.classList.remove("error");
+    Idmsg.classList.add("correct");
+    };
+
+    // Phone number
     var phoneInput = document.getElementById("Phone");
     var phoneMsg = document.getElementById("phoneMsg");
     var phoneValid = false;
@@ -272,7 +208,7 @@ window.onload = function (){
     postalCodeMsg.classList.add("correct");
     };
 
-    //
+    //Date of birth
     var birthdayInput = document.getElementById("Birthday");
     var birthdayMsg = document.getElementById("birthdayMsg");
     var birthdayValid = false;
@@ -309,6 +245,101 @@ window.onload = function (){
     birthdayMsg.classList.remove("error");
     birthdayMsg.classList.add("correct");
     };
-
     
+    // email
+    var emailLogin = document.getElementById("Email");
+    var emailErrorMsg = document.getElementById("emailErrorMsg");
+    var email = "example@email.com";
+    var emailValid = isValidEmail(email);
+    function isValidEmail(email) {
+        var atIndex = email.indexOf('@');
+        var dotIndex = email.lastIndexOf('.');
+        if (atIndex < 1 || dotIndex < atIndex + 2 || dotIndex + 2 >= email.length) {
+          return false;
+        }
+        if (email.slice(dotIndex + 1).length < 2) {
+          return false;
+        }
+        return true;
+      }
+     emailLogin.addEventListener('blur', function () {
+         var email = emailLogin.value;
+         for (var i = 0; i < email.length; i++) {
+         }
+         if (email.length < 9) {
+             emailErrorMsg.classList.remove("correct");
+             emailErrorMsg.classList.add("error");
+             emailErrorMsg.textContent = "Email invalid";
+         }
+     });
+     emailLogin.onfocus = function () {
+         emailErrorMsg.classList.remove("error");
+         emailErrorMsg.classList.add("correct");
+     };
+
+     // password
+        var passwordLogin = document.getElementById("Password");
+        var passwordErrorMsg = document.getElementById("passwordErrorMsg");
+        passwordLogin.addEventListener('blur', function () {
+        var password = passwordLogin.value;
+        var hasBigLetter = false;
+        var hasSmallLetter = false;
+        var hasNumber = false;
+        for (var i = 0; i < password.length; i++) {
+             var char = password.charAt(i);
+             if (char >= "0" && char <= "9") {
+                hasNumber = true;
+             } else if (char === char.toUpperCase()) {
+                 hasBigLetter = true;
+             } else if (char === char.toLowerCase()) {
+                 hasSmallLetter = true;
+             }
+         }
+         if (!hasBigLetter || !hasSmallLetter || !hasNumber) {
+             passwordErrorMsg.classList.remove("correct");
+             passwordErrorMsg.classList.add("error");
+             passwordErrorMsg.textContent = "this field needs at least one capital letter, one small letter and one number.";
+         }
+         if (password.length < 5) {
+             passwordErrorMsg.classList.remove("correct");
+             passwordErrorMsg.classList.add("error");
+             passwordErrorMsg.textContent = "this field needs at least 8 letters";
+             }
+     });
+    passwordLogin.onfocus = function () {
+    passwordErrorMsg.classList.remove("error");
+    passwordErrorMsg.classList.add("correct");
+    };
+
+    //Repeat Password
+    var repeatPasswordLogin = document.getElementById("RepeatPassword");
+    var repeatPasswordErrorMsg = document.getElementById("repeatPasswordErrorMsg");
+    repeatPasswordLogin.addEventListener('blur', function () {
+    var repeatPassword = repeatPasswordLogin.value;
+    var password = passwordLogin.value;
+    var isAlphanumeric = true;
+
+    for (var i = 0; i < repeatPassword.length; i++) {
+        var char = repeatPassword.charAt(i);
+        if (!((char >= "0" && char <= "9") || (char >= "a" && char <= "z") || (char >= "A" && char <= "Z"))) {
+            isAlphanumeric = false;
+            break;
+        }
+    }
+    if (repeatPassword !== password) {
+        repeatPasswordErrorMsg.classList.remove("correct");
+        repeatPasswordErrorMsg.classList.add("error");
+        repeatPasswordErrorMsg.textContent = "Passwords do not match";
+
+    } else if (repeatPassword.length < 8 || !isAlphanumeric) {
+        repeatPasswordErrorMsg.classList.remove("correct");
+        repeatPasswordErrorMsg.classList.add("error");
+        repeatPasswordErrorMsg.textContent = "This field needs at least 8 letters formed by letters and numbers.";
+    }
+});
+    repeatPasswordLogin.onfocus = function () {
+    repeatPasswordErrorMsg.classList.remove("error");
+    repeatPasswordErrorMsg.classList.add("correct");
+};
+
 }
