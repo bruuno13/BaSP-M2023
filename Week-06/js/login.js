@@ -63,6 +63,4 @@ window.onload = function (){
         passwordErrorMsg.classList.remove("error");
         passwordErrorMsg.classList.add("correct");
     };
-
-
 }
